@@ -16,7 +16,6 @@ Identifiquei 3 portas abertas no dispositivo:
 - Porta 443/TCP (HTTPS): Aberta (Gerenciamento WEB seguro)
 - Porta 5000/TCP (UPnP/Mitigado): Aberta
 
-  <img width="1920" height="920" alt="analiseDeSuperficieNMAP" src="https://github.com/user-attachments/assets/4ac92e53-ed4a-4b28-b7e4-c45efe433764" />
   
 Como analista, realizei a validação manual da porta 5000 através do navegador web do Kali Linux para identificar o serviço oculto. A requisição retornou um código HTTP 404 Not Found, confirmando a existência de uma aplicação web de segundo plano (provavelmente UPnP ou API do fabricante) ativa, porém sem indexação de página inicial pública.
 
