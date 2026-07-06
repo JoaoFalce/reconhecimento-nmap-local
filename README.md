@@ -40,3 +40,8 @@ sudo nmap -A -v 192.168.0.1
 
 O ativo foi identificado como um sistema baseado em Linux 3.2 - 4.14. Na visão de defesa, essa informação é usada para mapear se o firmware atual possui CVEs (Vulnerabilidades e Exposições Conhecidas) ativas que exijam uma atualização imediata.
 
+## 7. Auditoria de Vulnerabilidades Automatizada (Nmap Scripting Engine)
+Foi executada uma varredura profunda utilizando o motor de scripts do Nmap focado em falhas conhecidas através do comando técnico:
+```bash
+sudo nmap --script=vuln 192.168.0.1
+
