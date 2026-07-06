@@ -35,7 +35,7 @@ Análise Avançada de Impressão Digital (Fingerprinting)
 
 sudo nmap -A -v 192.168.0.1
 
-<img width="650" height="516" alt="Fingerprinting-OSdetails" src="https://github.com/user-attachments/assets/2be0643d-31d4-4cc3-a198-815fbeb8550e" />
+
 <img width="650" height="516" alt="Fingerprinting1" src="https://github.com/user-attachments/assets/1ac0dfe3-567d-49d7-8b58-88c499125c07" />
 
 O ativo foi identificado como um sistema baseado em Linux 3.2 - 4.14. Na visão de defesa, essa informação é usada para mapear se o firmware atual possui CVEs (Vulnerabilidades e Exposições Conhecidas) ativas que exijam uma atualização imediata.
