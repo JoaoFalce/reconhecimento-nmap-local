@@ -10,7 +10,7 @@ Demonstrar a aplicação prática de ferramentas de reconhecimento de rede (Nmap
 ## 3. Execução Técnica e Comandos Utilizados
 Para mapear as portas mais comuns abertas no dispositivo alvo, foi executado o escaneamento rápido via terminal do Kali Linux:
 
-## 3. Identificação
+## 4. Identificação
 Identifiquei 3 portas abertas no dispositivo:
 - Porta 80/TCP (HTTP): Aberta (Gerenciamento WEB padrão)
 - Porta 443/TCP (HTTPS): Aberta (Gerenciamento WEB seguro)
