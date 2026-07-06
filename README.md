@@ -18,7 +18,7 @@ Identifiquei 3 portas abertas no dispositivo:
   
 Como analista, realizei a validação manual da porta 5000 através do navegador web do Kali Linux para identificar o serviço oculto. A requisição retornou um código HTTP 404 Not Found, confirmando a existência de uma aplicação web de segundo plano (provavelmente UPnP ou API do fabricante) ativa, porém sem indexação de página inicial pública.
 
-## 4. Execução Técnica e Comandos Utilizados
+## 5. Execução Técnica e Comandos Utilizados
 Para mapear as portas mais comuns abertas no dispositivo alvo, foi executado o escaneamento rápido via terminal do Kali Linux:
 
 ```bash
