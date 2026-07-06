@@ -10,12 +10,13 @@ Demonstrar a aplicação prática de ferramentas de reconhecimento de rede (Nmap
 ## 3. Execução Técnica e Comandos Utilizados
 Para mapear as portas mais comuns abertas no dispositivo alvo, foi executado o escaneamento rápido via terminal do Kali Linux:
 
-```bash
-sudo nmap -F 192.168.0.1
-
+## 4
 Identifiquei 3 portas abertas no dispositivo:
 - Porta 80/TCP (HTTP): Aberta (Gerenciamento WEB padrão)
 - Porta 443/TCP (HTTPS): Aberta (Gerenciamento WEB seguro)
 - Porta 5000/TCP (UPnP/Mitigado): Aberta
 
 Como analista, realizei a validação manual da porta 5000 através do navegador web do Kali Linux para identificar o serviço oculto. A requisição retornou um código HTTP 404 Not Found, confirmando a existência de uma aplicação web de segundo plano (provavelmente UPnP ou API do fabricante) ativa, porém sem indexação de página inicial pública.
+
+```bash
+sudo nmap -F 192.168.0.1
