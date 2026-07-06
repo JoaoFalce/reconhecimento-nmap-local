@@ -15,6 +15,8 @@ Identifiquei 3 portas abertas no dispositivo:
 - Porta 80/TCP (HTTP): Aberta (Gerenciamento WEB padrão)
 - Porta 443/TCP (HTTPS): Aberta (Gerenciamento WEB seguro)
 - Porta 5000/TCP (UPnP/Mitigado): Aberta
+
+  <img width="1920" height="920" alt="analiseDeSuperficieNMAP" src="https://github.com/user-attachments/assets/4ac92e53-ed4a-4b28-b7e4-c45efe433764" />
   
 Como analista, realizei a validação manual da porta 5000 através do navegador web do Kali Linux para identificar o serviço oculto. A requisição retornou um código HTTP 404 Not Found, confirmando a existência de uma aplicação web de segundo plano (provavelmente UPnP ou API do fabricante) ativa, porém sem indexação de página inicial pública.
 
@@ -26,5 +28,15 @@ Desativação de Recursos Desnecessários: Se o serviço da porta 5000 (UPnP) n�
 ## 6. Execução Técnica e Comandos Utilizados
 Para mapear as portas mais comuns abertas no dispositivo alvo, foi executado o escaneamento rápido via terminal do Kali Linux:
 
-```bash
 sudo nmap -F 192.168.0.1
+
+
+Análise Avançada de Impressão Digital (Fingerprinting)
+
+sudo nmap -A -v 192.168.0.1
+
+<img width="650" height="516" alt="Fingerprinting-OSdetails" src="https://github.com/user-attachments/assets/2be0643d-31d4-4cc3-a198-815fbeb8550e" />
+<img width="650" height="516" alt="Fingerprinting1" src="https://github.com/user-attachments/assets/1ac0dfe3-567d-49d7-8b58-88c499125c07" />
+
+O ativo foi identificado como um sistema baseado em Linux 3.2 - 4.14. Na visão de defesa, essa informação é usada para mapear se o firmware atual possui CVEs (Vulnerabilidades e Exposições Conhecidas) ativas que exijam uma atualização imediata.
+
