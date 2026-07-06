@@ -18,7 +18,12 @@ Identifiquei 3 portas abertas no dispositivo:
   
 Como analista, realizei a validação manual da porta 5000 através do navegador web do Kali Linux para identificar o serviço oculto. A requisição retornou um código HTTP 404 Not Found, confirmando a existência de uma aplicação web de segundo plano (provavelmente UPnP ou API do fabricante) ativa, porém sem indexação de página inicial pública.
 
-## 5. Execução Técnica e Comandos Utilizados
+## 5.Conclusão e Mitigações Recomendadas
+Recomendação de Hardening: Manter o firmware do roteador sempre atualizado para mitigar vulnerabilidades conhecidas nos serviços web das portas 80 e 443.
+
+Desativação de Recursos Desnecessários: Se o serviço da porta 5000 (UPnP) não for estritamente necessário para aplicações internas, recomenda-se desativá-lo diretamente no painel de controle do roteador para reduzir a superfície de ataque da rede.
+
+## 6. Execução Técnica e Comandos Utilizados
 Para mapear as portas mais comuns abertas no dispositivo alvo, foi executado o escaneamento rápido via terminal do Kali Linux:
 
 ```bash
